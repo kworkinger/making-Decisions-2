@@ -133,7 +133,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for(let i = letters.length- 1; i >= 0; i--) {
+  console.log(`${letters[i]}`)
+}
 
 ////////// Advanced Problems //////////
 
@@ -142,6 +144,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 // Do not edit the code below.
 let letterGrade = 'B'
+let report = ""
 // Do not edit the code above.
 
 /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
@@ -155,7 +158,26 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-
+switch (letterGrade){
+  case "A":
+    report ="The student is doing excellently."
+    break;
+  case "B":
+    report = "The student is doing well."
+    break;
+  case "C":
+    report ="The student is doing alright."
+    break;
+  case "D":
+    report ="The student is not doing very well."
+    break;
+  case "F":
+    report ="The student is failing."
+    break;
+  default:
+    report ="Not an eligible grade"
+}
+console.log(report)
 
 
 ////////// PROBLEM 11 //////////
