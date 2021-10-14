@@ -45,7 +45,12 @@ let evensArr = []
 */
 
 //Code Here
-
+for(let i = 0; i < nums.length; i++){
+  if(nums[i] % 2 === 0) {
+    evensArr.push(nums[i])
+  }
+}
+console.log(evensArr)
 
 
 ////////// PROBLEM 5 //////////
@@ -59,7 +64,17 @@ var score = 74
 */
 
 //Code Here
-
+if(score >= 90){
+  console.log('A')
+} else if (score >= 80 && score <= 89) {
+  console.log('B')
+} else if (score >= 70 && score <= 79) {
+  console.log('C')
+} else if (score >= 60 && score <= 69) {
+  console.log('D')
+} else {
+  console.log('F')
+}
 
 ////////// Intermediate Problems //////////
 
@@ -74,15 +89,22 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
-
+let someNum = myFavoriteNumbers[4]
+// console.log(someNum)
 ////////// PROBLEM 7 //////////
 
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+myFavoriteNumbers.push(12,15)
+if (myFavoriteNumbers.length < 7) {
+  console.log('There are not enough elements in this array')
+} else if (myFavoriteNumbers.length >= 7){
+  someNum = myFavoriteNumbers[6]
+}
+console.log(myFavoriteNumbers)
+console.log(someNum)
 
 ////////// PROBLEM 8 //////////
 
@@ -93,7 +115,13 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
+for(let i = 0; i < listOfNumbers.length; i++) {
+  if(listOfNumbers[i] % 3 === 0) {
+    console.log(`${listOfNumbers[i]} is divisible by 3`)
+  } else {
+    console.log(`${listOfNumbers[i]} does not divide evenly by 3`)
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
